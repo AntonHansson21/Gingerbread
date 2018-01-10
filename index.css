@@ -1,0 +1,57 @@
+header {
+
+}
+
+h1  {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.navContainer {
+    width: 100%;
+}
+
+ul {
+    width: 1200px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+li {
+    list-style-type: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.svg-clipped {
+    clip-path: url("#svgPath");
+}
+
+
+.mainContainer {
+    width: 1200px;
+    margin: auto;
+    height: 800px;
+    border: solid 1px black;
+}
+
+img {
+    height: 800px;
+    width: 1200px;
+
+}
+
+.left-area:hover {
+
+}
+
+.right-area:hover {
+
+}
