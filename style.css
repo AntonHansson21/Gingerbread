@@ -1,7 +1,6 @@
 #custom {
 
-    width: 100vw;
-    height: 100vh;
+   
     background-color: transparent;
-    cursor: url("cursor.png"), auto;
+    cursor: url("cursor.cur"), auto;
 }
