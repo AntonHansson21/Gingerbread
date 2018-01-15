@@ -1,6 +1,68 @@
-#custom {
+body {
+    background-color: black;
+}
 
-   
-    background-color: transparent;
-    cursor: url("cursor.cur"), auto;
+.header {
+    text-align: center;
+    padding: 10px;
+    color:white;
+}
+
+.main {
+    width: 600px;
+    height: 550px;
+    border: 1px solid grey;
+    background-color:darkgrey;
+    overflow: hidden; 
+    position: absolute;
+    left:30%;
+    z-index: 1;
+
+}
+
+#curs {
+    cursor: url('gman1.png') 25 15, auto;
+}
+
+svg {
+    opacity: 1;
+    clip-path:url(#SVGpath);
+
+    -webkit-animation: move 20s linear forwards;
+	-moz-animation: move 20s linear forwards;
+	-ms-animation: move 20s linear forwards;
+	animation: move 20s linear forwards;
+    
+}
+
+svg path:hover{
+    opacity: 0.5;
+}
+#Lager_2:hover {
+ opacity: 1;
+}
+
+.object:hover {
+ opacity: 0;
+}
+
+@keyframes move {
+    0% {     
+        -webkit-transform: translateY(-1800px);
+        transform: translateY(-1800px); 
+    }
+    100%  {   
+        -webkit-transform: translateY(0);
+        transform: translate(0);
+     }
+}
+@-webkit-keyframes move {
+    0% {     
+        -webkit-transform: translateY(-1800px);
+        transform: translateY(-1800px); 
+    }
+    100%  {   
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+     }
 }
