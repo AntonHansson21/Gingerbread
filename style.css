@@ -67,6 +67,23 @@ body {
 
 }
 
+#start{
+    position: absolute;
+    top: 500px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 4;
+}
+
+#startbutton{
+    background-color: red;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    width: 20%;
+}
+
 #curs {
     cursor: url('gman1.png') 25 15, auto;
 }
@@ -75,10 +92,15 @@ svg {
     opacity: 1;
     clip-path:url(#SVGpath);
 
-    -webkit-animation: move 20s linear forwards;
+    /*-webkit-animation: move 20s linear forwards;
     -moz-animation: move 20s linear forwards;
     -ms-animation: move 20s linear forwards;
-    animation: move 20s linear forwards;
+    animation: move 20s linear forwards;*/
+
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-play-state: paused;
 
 }
 
@@ -113,3 +135,4 @@ svg path:hover{
         transform: translateY(0);
     }
 }
+
