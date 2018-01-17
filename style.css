@@ -1,11 +1,57 @@
 body {
-    background-color: black;
+    background-image: url("theme.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
+#lose {
+
+    background-color: red;
+    width: 50%;
+    height: 200px;
+    margin: 0% 25%;
+    z-index: 1;
+    position: absolute;
+    visibility: hidden;
+
+}
+#win {
+
+    background-color: #30ce29;
+    width: 50%;
+    height: 200px;
+    margin: 0% 25%;
+    z-index: 2;
+    position: absolute;
+    visibility: hidden;
+
+
+
+}
+
+.h2{
+
+    font-size: xx-large;
+    padding: 2% 40%;
+    font-family: Algerian;
+}
+
+#newgame {
+
+    background-color: black;
+    color: white;
+
+    width: 12%;
+    padding: 1%;
+    margin: 0% 42%;
+}
+
 
 .header {
     text-align: center;
     padding: 10px;
     color:white;
+
 }
 
 .main {
@@ -13,10 +59,11 @@ body {
     height: 550px;
     border: 1px solid grey;
     background-color:darkgrey;
-    overflow: hidden; 
+    overflow: hidden;
     position: absolute;
     left:30%;
-    z-index: 1;
+    z-index: 3;
+
 
 }
 
@@ -29,43 +76,40 @@ svg {
     clip-path:url(#SVGpath);
 
     -webkit-animation: move 20s linear forwards;
-	-moz-animation: move 20s linear forwards;
-	-ms-animation: move 20s linear forwards;
-	animation: move 20s linear forwards;
-    
+    -moz-animation: move 20s linear forwards;
+    -ms-animation: move 20s linear forwards;
+    animation: move 20s linear forwards;
+
 }
 
 svg path:hover{
     opacity: 0.5;
 }
 #Lager_2:hover {
- opacity: 1;
+    opacity: 1;
 }
 
-#Lager_24:hover {
-    fill:blue;
-}
 .object:hover {
- opacity: 0;
+    opacity: 0;
 }
 
 @keyframes move {
-    0% {     
+    0% {
         -webkit-transform: translateY(-1800px);
-        transform: translateY(-1800px); 
+        transform: translateY(-1800px);
     }
-    100%  {   
-        -webkit-transform: translateY(150px);
-        transform: translateY(150px);
-     }
+    100%  {
+        -webkit-transform: translateY(0);
+        transform: translate(0);
+    }
 }
 @-webkit-keyframes move {
-    0% {     
+    0% {
         -webkit-transform: translateY(-1800px);
-        transform: translateY(-1800px); 
+        transform: translateY(-1800px);
     }
-    100%  {   
-        -webkit-transform: translateY(150px);
-        transform: translateY(150px);
-     }
+    100%  {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
