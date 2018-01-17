@@ -42,6 +42,9 @@ svg path:hover{
  opacity: 1;
 }
 
+#Lager_24:hover {
+    fill:blue;
+}
 .object:hover {
  opacity: 0;
 }
@@ -52,8 +55,8 @@ svg path:hover{
         transform: translateY(-1800px); 
     }
     100%  {   
-        -webkit-transform: translateY(0);
-        transform: translate(0);
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
      }
 }
 @-webkit-keyframes move {
@@ -62,7 +65,7 @@ svg path:hover{
         transform: translateY(-1800px); 
     }
     100%  {   
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
      }
 }
