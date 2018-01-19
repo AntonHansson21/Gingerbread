@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="snowjs.js"></script>
+	<script src="lose.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="startknapp.js"></script>
-    <title>Document</title>
+    <title>Christmas Game</title>
 </head>
 <body>
 <audio src="gamesong.mp3" autoplay loop></audio>
@@ -28,18 +29,22 @@
 <style type="text/css">
 	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
 	.st1{fill:none;}
+	#Lager_5 {fill:transparent;stroke:transparent;}
 </style>
 <g id="Lager_1">
-	<path class="st0" d="M-17.9,203.3C36.5,188.8,98,205,138.2,244.4s57.6,100.6,44.2,155.2C160.2,490,62.5,560.1,76.2,652.1
+	<path onMouseOver="show('lose'), hide('curs')" class="st0" d="M-17.9,203.3C36.5,188.8,98,205,138.2,244.4s57.6,100.6,44.2,155.2C160.2,490,62.5,560.1,76.2,652.1
 		c4.5,30.2,21,57.1,38.7,82C156.3,792.4,206,844.5,245.5,904c39.5,59.6,68.8,129.8,62,200.9c-8.1,84.6-64.7,155.5-118.2,221.5
 		c-26.1,32.2-53.6,73.2-38.7,111.9c12.4,32.3,48.6,47,78.2,65.1c78.9,48.3,122.9,136.3,162.9,219.8c43.3,90.3,87.6,190.2,62.3,287.1
 		c-25.5,98-114.3,163.4-191.2,229.2c-76.9,65.8-152.9,155.5-137.8,255.6c9.7,64,56.3,122.7,46.2,186.6c-6,38-31.2,69.7-55.6,99.4
 		C57,2853.1-1.7,2924.9-60.5,2996.7"/>
-	<path class="st0" d="M852.8,2996.6c-89.7-59.9-178.4-125.6-239.8-214.3c-61.4-88.7-91.9-204.9-55.8-306.5
+	<path onMouseOver="show('lose'), hide('curs')" class="st0" d="M852.8,2996.6c-89.7-59.9-178.4-125.6-239.8-214.3c-61.4-88.7-91.9-204.9-55.8-306.5
 		c18.7-52.7,53.6-97.9,79.4-147.4c50.6-96.9,65.7-211.9,41.9-318.6c-25.7-115.2-94.6-219.8-103.4-337.6
 		c-12.5-167.5,99.1-331.2,65-495.8C612.8,1044,498.3,948.3,441.3,825.6c-17-36.6-28.9-78.2-17.8-117
 		c15.8-55.3,71.7-87.5,109.4-130.9c38.8-44.7,59.2-105,55.5-164.1c-1.4-22.4-6.1-44.6-4.7-67c3.4-54.3,43.3-101.1,91.1-126.9
 		s103-34.3,157-40.5"/>
+</g>
+	<g onMouseOver="show('win'), hide('curs')" id="Lager_5">
+	<rect x="1" class="st1" width="800" height="275"/>
 </g>
 <g id="Lager_2">
 
@@ -75,10 +80,7 @@
 
 		<image style="overflow:visible;" width="512" height="512" xlink:href="box.png"  transform="matrix(0.2266 0 0 0.2266 559 1950)">
 	</image>
-</g>
-<g id="Lager_5">
-	<rect x="1" class="st1" width="800" height="180"/>
-</g>
+
 <g id="Lager_3">
 
 		<image style="overflow:visible;" width="800" height="479" xlink:href="deer.png"  transform="matrix(0.21 0 0 0.21 -26 2168)">
@@ -129,9 +131,22 @@
 	</image>
 </g>
 </svg>
+</div>
 
+<div id="lose"><h2 class="h2">You lose</h2>
 
+	<div input type="button" value="Refresh Page" onClick="window.location.reload()"><h3 id="newgame">New Game</h3></div>
 
 </div>
+
+<div id="win"><h2 class="h2">You Win!</h2>
+
+	<div input type="button" value="Refresh Page" onClick="window.location.reload()"><h3 id="newgame">New Game</h3></div>
+
+</div>
+
+
+
+
 </body>
 </html>

@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="snowjs.js"></script>
+	<script src="lose.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="startknapp.js"></script>
-    <title>Document</title>
+    <title>Christmas Game</title>
 </head>
 <body>
 <audio src="gamesong.mp3" autoplay loop></audio>
@@ -27,18 +28,22 @@
 <style type="text/css">
 	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
     .st1{fill:none;}
+	#Lager_5 {fill:transparent;stroke:transparent;}
 </style>
 <g id="Lager_1">
-	<path class="st0" d="M-32.4,2957.4c82.6,5.8,166.9-33.4,215.7-100.3c48.8-66.9,60.4-159.2,29.7-236
+	<path onMouseOver="show('lose'), hide('curs')" class="st0" d="M-32.4,2957.4c82.6,5.8,166.9-33.4,215.7-100.3c48.8-66.9,60.4-159.2,29.7-236
 		c-21.4-53.5-62.2-102.5-60.5-160.1c2.5-83.5,88.5-134.3,146.7-194.2c70.9-73,106.7-176.1,107.4-277.8s-31.8-202-82.4-290.3
 		c-26.5-46.3-59-93.1-59.4-146.4c-0.4-58,37.1-108.2,68.3-157.1c60.6-94.9,103-201.5,123.9-312.2c10-53,15.1-108.3,1.1-160.4
 		c-14.2-52.7-46.8-98.3-78.8-142.6c-62.1-85.9-124.2-171.9-186.2-257.8c-18.8-26.1-38.1-53.2-44.7-84.6c-5.5-26.5-1.5-53.9-2.7-81
 		c-4.6-100.5-92.1-190.5-192.4-197.9"/>
-	<path class="st0" d="M826.5,2902.9c-138.3,2.7-276.3-62.9-361.7-171.7c-50-63.8-82.8-145.6-70.4-225.7
+	<path onMouseOver="show('lose'), hide('curs')" class="st0" d="M826.5,2902.9c-138.3,2.7-276.3-62.9-361.7-171.7c-50-63.8-82.8-145.6-70.4-225.7
 		c11.9-77,63.1-142,118.9-196.3s118.6-102.5,164.5-165.3c76.2-104.2,95.4-257.2,19.2-361.4c-31.5-43.2-76.1-74.8-112.6-113.8
 		c-36.5-39-66.1-91.3-56.2-143.8c10.4-55.1,60.1-93.3,85.9-143c30.7-59.2,25.6-129.8,19.8-196.2c-8-90.1-16-180.7-39.5-268
 		c-19.7-73.2-49.7-153.2-16.7-221.5c14.4-29.8,39.7-53.9,50.5-85.2c22.9-66.5-27.6-135.7-82.5-179.7c-32.9-26.3-71.1-52.8-80.7-93.8
 		c-11.8-50.4,27.7-101.2,75.5-121s101.6-16.5,153.3-14.3c51.7,2.2,106.2,2.4,151.7-22.2"/>
+</g>
+		<g onMouseOver="show('win'), hide('curs')" id="Lager_5">
+	<rect x="0" class="st1" width="800" height="2390"/>
 </g>
 <g id="Lager_2">
 
@@ -151,13 +156,25 @@
 		<image style="overflow:visible;" width="1350" height="1800" xlink:href="tree.png"  transform="matrix(9.055556e-02 0 0 9.055556e-02 597 659)">
 	</image>
 </g>
-<g id="Lager_5">
-	<rect y="-5" class="st1" width="800" height="180"/>
+	<g onMouseOver="show('win'), hide('curs')" id="Lager_5">
+	<rect y="29" class="st1" width="800" height="180"/>
 </g>
 </svg>
+</div>
 
+<div id="lose"><h2 class="h2">You lose</h2>
 
+	<div input type="button" value="Refresh Page" onClick="window.location.reload()"><h3 id="newgame">New Game</h3></div>
 
 </div>
+
+<div id="win"><h2 class="h2">You Win!</h2>
+
+	<div input type="button" value="Refresh Page" onClick="window.location.reload()"><h3 id="newgame">New Game</h3></div>
+
+</div>
+
+
+
 </body>
 </html>
