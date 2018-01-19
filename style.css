@@ -142,7 +142,7 @@ a {
     z-index: 4;
 }
 
-#startbutton{
+#startbutton, #medium, #hard {
     background-color: red;
     padding: 10px;
     border-style: none;
